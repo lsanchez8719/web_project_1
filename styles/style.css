@@ -1,5 +1,4 @@
 .page {
-  display: flex;
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
   /* so here we've set a minimum page width */
@@ -7,88 +6,66 @@
   /* here we've set a maximum page width */
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
 }
 
-.header-block {
+.header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  margin: auto;
-  display: flex;
+  margin: 0 auto;
+  background: #f2f2f2;
+  margin: 0 auto;
+  padding: 0 auto;
+  /* parameters for the header section */
 }
-.logo_place_header{
-  z-index: auto;
-  width: 154px;
-  height: 31px;
-  left: 64px;
-  top: 30px;
-  margin: auto;
-  position: absolute;
-}
-.header__title{
-  display: flex;
-  width: 730px;
-  left: 64px;
-  line-height: 96px;
-  font-size: 104px;
-  font-weight: bold;
-  margin: auto;
-}
-.header__subtitle{
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: normal;
-  bottom: 30px;
-  width: 388px;
-  position: absolute;
-  z-index: 1;
-  }
 
-  .header__link{
-    text-decoration: none;
-    z-index: 1;
+/* here we have two examples of selectors in order to remind you how to set styles for elements */
+
+.header__logo{
+  display: flexbox;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+
+logo_place_header{
+z-index: 1;
+}
+
+header__title{
+  display: flex;
+  align-items: center;
+  width: 730px;
+  font-weight: bold; 
+  font-size: 102px;
+  line-height: 96px;
+  left: 64px;
+  width: 730px;
+  position: relative;
+}
+
+header subtitle{
+  font-size: 18px
+  font-weight: normal;
+  line-height: 25px;
+  position: absolute;
+}
+
+header__link{
+
   }
-    .header__link:link {
-      color: #2F80ED;
-      text-decoration: none;
-      z-index: 1;
-     }
-     .header__link:visited {
-      color: #2F80ED;
-      text-decoration: none;
-      z-index: 1;
-     }
-     .header__link:active {
-       color: #2F80ED;
-       text-decoration: none;
-       z-index: 1;
-       }
+hearder__main-ilustration{
+
+} 
 
 .header__square-pic {
-  display: flex;
-  top: 64px;
-  margin: auto;
   height: 568px;
   width: 568px;
-  background-color:#2F80ED;
-  position: absolute;
-  z-index:-1;
-}
-.header__main-illustration{
-  width: 756px;
-  height: 608px;
-  position: absolute;
-  overflow: hidden;
-}
-  /* is it  really position: relative; */
-
-.two-columns{
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  margin: auto;
-  display:flex;
+  background: #2f80ed;
+  right: 0;
 }
 
 /* including elements with key-value modifiers */
@@ -98,4 +75,3 @@
   margin-right: 0;
   margin-top: 80px;
 }
-
