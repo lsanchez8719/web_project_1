@@ -41,7 +41,7 @@ z-index: 1;
 .header__title{
   margin: 0 auto;
   width: 730px;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 102px;
   line-height: 96px;
   left: 64px;
@@ -49,7 +49,7 @@ z-index: 1;
   position: absolute;
 }
 
-.header__subtitle{ 
+.header__subtitle{
   width: 388px;
   font-size: 18px;
   font-weight: normal;
@@ -68,7 +68,7 @@ bottom: 30px;
 left: 64px;
 text-decoration: none;
   }
-  
+
 .header__main-illustration{
   position: absolute;
   height: 608px;
@@ -78,7 +78,7 @@ text-decoration: none;
   z-index: 2;
   background-size: cover;
   background-position: center;
-} 
+}
 
 .header__square-pic {
   top: 64px;
@@ -93,16 +93,19 @@ text-decoration: none;
 .content{
 font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
 display: block;
+
 }
 .description{
   margin-top: 100px;
 }
+
 .two-columns{
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
+
 .two-columns__brief{
   margin: 0;
   line-height: 1.2;
@@ -110,7 +113,8 @@ display: block;
   width: 175px;
   color: #2F80ED;
 }
-  .two-columns__main-text{
+
+.two-columns__main-text{
     font-size: 24px;
     line-height: 34px;
     min-width: 784px;
@@ -124,9 +128,62 @@ margin: 30px 0 0;
 }
 
 .two-columns__span-accent{
-  line-height: 34px;
+line-height: 34px;
 font-size: 24px;
 font-weight: bold;
+}
+
+.digits{
+  margin-top: 100px;
+}
+
+.section__title{
+  line-height: 69px;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  min-width: 60%;
+
+}
+
+.section__subtitle{
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  text-align: center;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.table__cell{
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.table__text{
+  line-height: 1.2;
+  font-size: bold;
+  font-weight: normal;
+  margin: 15px;
 }
 
 /* including elements with key-value modifiers */
