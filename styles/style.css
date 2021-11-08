@@ -163,7 +163,7 @@ font-weight: bold;
   text-align: center;
   align-content: space-between;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .table__cell{
