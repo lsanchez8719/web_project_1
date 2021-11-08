@@ -226,9 +226,26 @@ font-weight: bold;
     color:#2F80ED;
   }
 
-/* including elements with key-value modifiers */
+  .kaufman{
+  background-color: #1F1F1F;
+  }
+  .section__title_theme_dark{
+
+  }
+  .section__subtitle_theme_dark{
+
+  }
+.table__theme_dark{
+
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-top: 80px;
 }
+
+.table__heading_theme_dark{
+
+}
+/* including elements with key-value modifiers */
