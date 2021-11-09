@@ -228,24 +228,70 @@ font-weight: bold;
 
   .kaufman{
   background-color: #1F1F1F;
+  text-decoration: none;
+  color: white;
+  z-index: 1;
   }
-  .section__title_theme_dark{
 
+  .section__title_theme_dark{
+    width: 60%;
+    margin-top: 90px;
+    line-height: 69px ;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin:0 auto;
+    text-decoration: none;
   }
   .section__subtitle_theme_dark{
-
+    width: 60%;
+    margin-top: 20px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 auto;
+    text-decoration: none;
   }
-.table__theme_dark{
 
+.table__theme_dark{
+  text-decoration: none;
+  width: 1100px
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .table__cell_theme_dark {
+  text-decoration: none;
   width: 200px;
   color: white;
   margin-top: 80px;
+  z-index: 1;
 }
 
 .table__heading_theme_dark{
-
+  bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+.table__text_theme_dark{
+  text-decoration: none;
+  margin-bottom: 80px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 660px;
+  height: 636px;
+  color:#2F80ED;
+  z-index: 0;
+  position: absolute;
+  right: -124px;
+  overflow: hidden;
+  }
 /* including elements with key-value modifiers */
