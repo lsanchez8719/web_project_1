@@ -10,6 +10,7 @@
 }
 
 .header {
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   width: 100%;
@@ -107,7 +108,7 @@ display: block;
 }
 
 .two-columns__brief{
-  margin: 0;
+  margin-top: 35px;
   line-height: 1.2;
   font-size: 18px;
   width: 175px;
@@ -164,6 +165,7 @@ font-weight: bold;
   align-content: space-between;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .table__cell{
@@ -176,18 +178,18 @@ font-weight: bold;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-
 }
 
 .table__text{
   line-height: 1.2;
-  font-size: bold;
+  font-size: 18px;
   font-weight: normal;
   margin: 15px;
 }
 
 .feynman{
   height: 790px;
+  padding-top: 100px;
   background-position: bottom left;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -197,7 +199,6 @@ font-weight: bold;
 }
 
   .Feynman__title{
-    padding-top: 100px;
     width: 776px;
     text-align: center;
     z-index: 1;
@@ -212,7 +213,7 @@ font-weight: bold;
     font-size: 36px;
     font-weight: normal;
     text-align: center;
-    margin-top: 70px 0 0;
+    margin-top: 70px;
   }
 
   .Feynman__link{
@@ -227,10 +228,10 @@ font-weight: bold;
   }
 
   .kaufman{
+  padding: 90px 0;
   background-color: #1F1F1F;
-  text-decoration: none;
   color: white;
-  z-index: 1;
+  position: relative;
   }
 
   .section__title_theme_dark{
@@ -240,9 +241,10 @@ font-weight: bold;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    margin:0 auto;
-    text-decoration: none;
-    z-index: 1;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+
   }
   .section__subtitle_theme_dark{
     width: 60%;
@@ -252,22 +254,30 @@ font-weight: bold;
     font-weight: normal;
     margin: 0 auto;
     list-style: none;
-    z-index: 1;
+    position: relative;
+  }
+
+  .flex_container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
   }
 
 .table__theme_dark{
-  text-decoration: none;
+  list-style: none;
   width: 1100px;
   margin: 0 auto;
-  z-index: 1;
+  position: relative;
 }
 
 .table__cell_theme_dark {
-  text-decoration: none;
+  list-style: none;
   width: 200px;
   color: white;
   margin-top: 80px;
-  z-index: 1;
+
 }
 
 .table__heading_theme_dark{
@@ -275,19 +285,14 @@ font-weight: bold;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
+  list-style: none;
 }
 
 .table__text_theme_dark{
-  text-decoration: none;
   margin-bottom: 80px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.relative_test{
-  position: relative;
 }
 
 .kaufman__triangle{
@@ -295,8 +300,7 @@ font-weight: bold;
   width: 660px;
   height: 636px;
   color:#2F80ED;
-  z-index: 0;
-  top: -172px;;
+  top: 0px;
   position: absolute;
   right: -124px;
   overflow: hidden;
@@ -304,14 +308,76 @@ font-weight: bold;
 
   .footer{
     min-height: 350px;
-    background-color: #000000;
+    background-color: #1F1F1F;
+    color:white;
+    font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+    padding: 60px 0 40px;
+    box-sizing: border-box;
   }
 
-  .logo{
-    background-size: cover;
+  .footer__columns{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
   }
+  .footer__column_content_copyright{
+    flex-basis: 711px;
+    position: relative;
+  }
+
+.logo{
+  width: 183px;
+  height: 37px;
+  top: 30px;
+  left: 64px;
+  background-repeat: no-repeat;
+}
+  /*at height 35px part of the logo is missing */
+
   .logo_place_footer{
-      width: 183px;
-      height: 35px;
+    background-image: url("../images/logo_place_footer.png");
+  }
+
+.footer__author{
+line-height: 25px;
+font-size: 18px;
+font-weight: normal;
+color: white;
+bottom: -144px;
+position: relative
+}
+
+
+.footer__column-link{
+  padding-bottom: 20px;
+}
+
+.footer__column-heading{
+line-height: 30px;
+font-size: 18px;
+font-weight: bold;
+margin: 0;
+margin-bottom: 20px
+}
+
+.footer_list{
+  display: block;
+color: white;
+list-style: none;
+padding-right: 10px;
+}
+
+.footer_link {
+text-decoration: none;
+color: white;
+padding: 0px;
+padding-bottom: 20px;
+}
+
+.footer__social-icons{
+  height: 16px;
+  width: 16px;
+ padding-right: 10px;
 }
 /* including elements with key-value modifiers */
