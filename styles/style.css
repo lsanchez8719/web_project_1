@@ -335,12 +335,6 @@
   flex-basis: 711px;
 }
 
-.logo {
-  width: 183px;
-  height: 37px;
-  background-repeat: no-repeat;
-}
-
 .logo_place_footer{
   background-image: url(../images/logo_place_footer.png);
 }
