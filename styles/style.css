@@ -318,7 +318,7 @@
   box-sizing: border-box;
 }
 
-.footer__columns{
+.footer__columns {
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -326,17 +326,20 @@
 }
 /* no */
 
-.footer__column
-{
+.footer__column {
   min-height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  justify-content: space-between;
 }
 
-.logo_place_footer{
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.png);
+  background-size: cover;
 }
 
 .footer__author {
@@ -345,13 +348,14 @@
   font-weight: normal;
   color: white;
   margin: 18px 0;
-  /*left: 0; */
-  bottom: 0;
-  position: fixed;
 }
 
+.footer__column_content_social {
+  list-style: none;
+  padding: 0;
+}
 
-.footer__column-list{
+.footer__list {
   list-style: none;
   padding: 0;
 }
@@ -363,7 +367,7 @@
   margin-bottom: 20px;
 }
 
- .footer__column-link{
+.footer__column-link {
   text-decoration: none;
   color: white;
 }
