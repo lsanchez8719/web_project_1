@@ -161,6 +161,8 @@
   margin-top: 0;
   /*Double Margin fixed */
   max-width: 60%;
+  margin-bottom: 0;
+  /*bottom margin fixed */
 }
 
 .table {
