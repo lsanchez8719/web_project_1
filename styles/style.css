@@ -132,7 +132,79 @@
   font-size: 24px;
   font-weight: bold;
 }
+/*******HERE******************************/
+/*******HERE******************************/
+/*******HERE******************************/
+.techniques{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 0;
+  width: 80%;
+}
 
+.cards{
+width: 920px;
+margin: 0 auto;
+ display: flex;
+justify-content: space-between;
+ align-content: space-between;
+}
+
+.cards__item{
+width: 240px;
+list-style: none;
+margin-right: 100px; /*3rd child?*/
+}
+
+.cards__image{
+
+  margin: 60px 40px; /*fixed Margin*/
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 43px;
+  display: block; /* ?*/
+  background-size: cover; /* ?*/
+  background-position: center; /* ?*/
+}
+
+.cards__title{
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+
+}
+.cards__description{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+
+.video{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 100px auto 0;
+
+}
+
+.video__iframes{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.video__iframe{
+    height:316px;
+    padding-right: 20px;
+  }
+
+
+/*HERE****************************************/
 .digits {
   display: flex;
   flex-wrap: wrap;
@@ -171,13 +243,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  /*Double Margin fixed */
   list-style: none;
   padding-left: 0;
 }
 
 .table__cell {
-  margin-top: 60px; /*Can't delete*/
+  margin-top: 60px;
   width: 250px;
 }
 
@@ -316,6 +387,35 @@
   overflow: hidden;
 }
 
+/*******HERE**********/
+.resources{
+  margin-top: 100px;
+  align-items: center;
+
+}
+
+.resources__logo-zone{
+width: 1100px;
+  display: flex;
+  list-style: none;
+  margin: 80px auto 217px;
+}
+
+.resources__logo{
+width: 270px;
+height:38px;
+background-size: contain;
+background-repeat: no-repeat;
+opacity: 100%;
+}
+
+.resources__logo:hover{
+  opacity: 50%;;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+/*******HERE**********/
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
