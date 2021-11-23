@@ -135,7 +135,7 @@
 /*******HERE******************************/
 /*******HERE******************************/
 /*******HERE******************************/
-.techniques{
+.techniques {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,66 +144,76 @@
   width: 80%;
 }
 
-.cards{
-width: 920px;
-margin: 0 auto;
- display: flex;
-justify-content: space-between;
- align-content: space-between;
+.cards {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-.cards__item{
-width: 240px;
-list-style: none;
-margin-right: 100px; /*3rd child?*/
+.cards__item {
+  width: 240px;
+  list-style: none;
+  margin-right: 100px;
+  background-size: cover; /* ?*/
+  background-position: center; /* ?*/
 }
 
-.cards__image{
+.cards__item.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
 
+.cards__item:last-of-type {
+  margin-right: 0;
+}
+
+.cards__image {
   margin: 60px 40px; /*fixed Margin*/
   width: 160px;
   height: 160px;
   border-radius: 50%;
   margin-bottom: 43px;
-  display: block; /* ?*/
-  background-size: cover; /* ?*/
-  background-position: center; /* ?*/
 }
 
-.cards__title{
+.cards__title {
   margin: 0;
   padding: 16px;
   text-align: center;
-
 }
-.cards__description{
+.cards__description {
   text-align: center;
   margin-bottom: 60px;
 }
 
-
-
-.video{
+.video {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   margin: 100px auto 0;
-
 }
 
-.video__iframes{
-display: flex;
-justify-content: center;
-margin-top: 50px;
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.video__iframe{
-    height:316px;
-    padding-right: 20px;
-  }
+.video__iframe {
+  height: 316px;
+  padding-right: 20px;
+}
 
+/*fix  cover*/
 
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
+  position: relative;
+  z-index: -1;
+}
 /*HERE****************************************/
 .digits {
   display: flex;
@@ -268,8 +278,9 @@ margin-top: 50px;
 }
 
 .feynman {
-  min-height: 790px;
   padding-top: 100px;
+  min-height: 790px;
+  margin-top: 68px;
   background-position: bottom left;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -307,6 +318,77 @@ margin-top: 50px;
   right: 48px;
   color: #2f80ed;
 }
+
+/*Khan margin Top + bottom fixed */
+
+.khan {
+  background-color: #f2f2f2;
+  margin: 105px auto;
+}
+
+.khan__container {
+  width: 80%;
+}
+
+.khan__author {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote {
+  /* margin fixed */
+  max-width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 50px 0 0;
+  font: normal;
+}
+
+.khan__author-quote {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 36px 0;
+}
+.khan__quote-author-subline {
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  opacity: 100%;
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.khan__book-container {
+  display: flex;
+  margin-top: 68px;
+}
+.khan__book-pic {
+  height: 608px;
+  width: 620px;
+  background-size: cover;
+  background-position: 0 0;
+}
+/*KHAN*/
 
 .kaufman {
   display: flex;
@@ -388,29 +470,31 @@ margin-top: 50px;
 }
 
 /*******HERE**********/
-.resources{
-  margin-top: 100px;
+.resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
+  margin-top: 100px;
 }
 
-.resources__logo-zone{
-width: 1100px;
+.resources__logo-zone {
+  width: 1100px;
   display: flex;
   list-style: none;
   margin: 80px auto 217px;
 }
 
-.resources__logo{
-width: 270px;
-height:38px;
-background-size: contain;
-background-repeat: no-repeat;
-opacity: 100%;
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 100%;
 }
 
-.resources__logo:hover{
-  opacity: 50%;;
+.resources__logo:hover {
+  opacity: 50%;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
