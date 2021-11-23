@@ -68,6 +68,12 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  opacity: 50%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
 .header__main-illustration {
   position: absolute;
   height: 608px;
@@ -85,7 +91,29 @@
   background: #2f80ed;
   right: 0;
   z-index: 0;
+  transform: rotate(-15deg);
+  animation: rotation linear 20s infinite;
 }
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-15deg);
+  }
+}
+
+@keyframes rotation{
+  from{
+  transform:rotation(-15deg);
+}
+to{
+  transform:rotation(360deg);
+  }
+}
+
+
 .description {
   display: flex;
   justify-content: center;
@@ -318,6 +346,11 @@
   right: 48px;
   color: #2f80ed;
 }
+.feynman__link:hover {
+  opacity: 50%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
 
 /*Khan margin Top + bottom fixed */
 
@@ -458,6 +491,8 @@
   font-weight: normal;
 }
 
+
+
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   width: 660px;
@@ -467,8 +502,28 @@
   position: absolute;
   right: -124px;
   overflow: hidden;
+  transform: rotate(-15deg);
+animation: rotation reverse 20s infinite;
 }
 
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-15deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(-15deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
 /*******HERE**********/
 .resources {
   display: flex;
@@ -564,6 +619,11 @@
   color: white;
   line-height: 30px;
   font-size: 18px;
+}
+.footer__column-link:hover {
+  opacity: 50%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .footer__social-icons {
