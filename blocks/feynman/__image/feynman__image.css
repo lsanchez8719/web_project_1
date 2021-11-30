@@ -1,6 +1,9 @@
 .feynman__image{
-background-position: bottom left;
-height: 867px;
-width: 637px;
+height: 637px;
+width: 867px;
 margin: 0;
+bottom: 0;
+left: 0;
+z-index: -1;
+position: absolute;
 }
