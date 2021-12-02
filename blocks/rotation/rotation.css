@@ -5,18 +5,10 @@
 
 @keyframes rotation {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to {
-      transform: rotate(-15deg);
-  }
-}
 
-@keyframes rotation{
-  from{
-  transform:rotation(-15deg);
-}
-to{
-  transform:rotation(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
